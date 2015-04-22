@@ -1,0 +1,23 @@
+1.
+	错误现象：
+		java.lang.NullPointerException
+		cn.ITHong.dao.HQLDao.queryAllClasses(HQLDao.java:18)
+	解决方案
+	static {
+		url = "cn/ITHong/struts2_hibernate/domain/hibernate.cfg.xml";
+		HibernateUtils hibernateUtils = new HibernateUtils();
+		hibernateUtils.init();
+	}
+2.	错误现象
+		java.sql.SQLException: No suitable driver found for 
+		jdbc:mysql://localhost:3306/hibernate4
+	解决方案
+		在hibernate.hbm.xml
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+3.	错误现象
+	org.hibernate.HibernateException:
+	 'hibernate.dialect' must be set when no Connection available
+	解决方案
+	不用放入方言的 实质的东东在下面哦
+	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	
