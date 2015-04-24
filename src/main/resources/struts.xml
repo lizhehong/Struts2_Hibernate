@@ -8,5 +8,8 @@
 				<action name="getAllClasses" method="getDataFromClasses" class="cn.ITHong.struts.action.HQLAction">
 					<result name="allClasses">allClasses.jsp</result>
 				</action>
+				<action name="getStudents" method="getDataFrom_S_Cl_C" class="cn.ITHong.struts.action.HQLAction">
+					<result name="onetomanytomany">allStudents.jsp</result>
+				</action>
 		</package>	
 	</struts>

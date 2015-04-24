@@ -16,5 +16,7 @@ public class HQLDaoTest {
 		List<Classes> cList = HQLDao.getInstance().queryAllClasses();
 		System.out.println(cList.size());
 	}
-
+	public void testQuertyClassesByProperties(){
+		HQLDao.getInstance().quertyClassesByProperties();
+	}
 }

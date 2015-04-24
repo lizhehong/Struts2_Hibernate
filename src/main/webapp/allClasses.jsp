@@ -8,6 +8,7 @@
 <title>显示所有班级</title>
 </head>
 <body>
+	<s:debug></s:debug>
 	<s:iterator value="cList" var="classes">
 		<s:property value="cname"/>
 		<s:property value="description"/><br/><hr/>
